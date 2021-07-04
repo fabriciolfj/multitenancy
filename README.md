@@ -18,3 +18,4 @@
 ## Estratégia de implementação.
 - Configuraremos previamente todos datasources personalizados na aplicação.
 - O datasource será vinculado por um uuid, informado no header da requisição.
+- Caso deseje adicionar um novo inquilino, apenas o insere no application.yml
