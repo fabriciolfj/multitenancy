@@ -14,3 +14,7 @@
 
 ## Forma de gerenciar vários datasources com spring
 - A configuração padrão do spring boot possui apenas um datasource, no entanto podemos gerenciar de forma personalizada vários datasources, utilizando a classe AbstractRoutingDataSource.
+
+## Estratégia de implementação.
+- Configuraremos previamente todos datasources personalizados na aplicação.
+- O datasource será vinculado por um uuid, informado no header da requisição.
