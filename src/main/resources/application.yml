@@ -1,0 +1,18 @@
+tenants:
+  datasources:
+    financeiro-01:
+      jdbcUrl: jdbc:h2:mem:financeiro
+      driverClassName: org.h2.Driver
+      username: sa
+      password: password
+    estoque-01:
+      jdbcUrl: jdbc:h2:mem:estoque
+      driverClassName: org.h2.Driver
+      username: sa
+      password: password
+
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  flyway:
+    enabled: false #para gerar o schema quando solicitado, pois inicialmente não teremos ninguem registrado (nenhum inquilino)
